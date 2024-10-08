@@ -5,8 +5,9 @@ import cookieParser from 'cookie-parser';
 import connectDB from './config/db.js';
 import userRoutes from './routes/userRoutes.js'
 import productRoutes from './routes/productRoutes.js'
-// import from 
+// import from
 // import userRoutes from
+// index.js file (branch main );
 import orderRoutes from './routes/orderRoute.js'
 import uploadRoutes from './routes/uploadRoutes.js'
 import categoryRoutes from "./routes/categoryRoutes.js";
