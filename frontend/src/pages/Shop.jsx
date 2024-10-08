@@ -9,7 +9,7 @@ import {
     setChecked,
 } from "../redux/features/shop/shopSlice";
 import Loader from "../components/Loader";
-import ProductCard from "./Products/ProductCard.jsx";
+import ProductCard from "./products/ProductCard.jsx";
 
 const Shop = () => {
     const dispatch = useDispatch();
