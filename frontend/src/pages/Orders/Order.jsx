@@ -80,6 +80,7 @@ const Order = () => {
     }
 
     function onError(err) {
+        console.log("order.js")
         toast.error(err.message);
     }
 

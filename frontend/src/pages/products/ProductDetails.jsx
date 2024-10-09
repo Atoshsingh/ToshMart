@@ -80,7 +80,7 @@ const ProductDetails = () => {
                 </Link>
             </div>
 
-            {isLoading ? (
+            {/* {isLoading ? (
                 <Loader />
             ) : error ? (
                 <Message variant="danger">
@@ -120,7 +120,6 @@ const ProductDetails = () => {
                                     <h1 className="flex items-center mb-6">
                                         <FaStar className="mr-2 text-white" /> Reviews:{" "}
                                     
-                                        {/* {product.numReviews} */}
                                         {product.reviews.length}
                                     </h1>
                                 </div>
@@ -188,7 +187,7 @@ const ProductDetails = () => {
                         </div>
                     </div>
                 </>
-            )}
+            )} */}
         </>
     );
 };
