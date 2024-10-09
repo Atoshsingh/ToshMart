@@ -11,6 +11,9 @@ import productRoutes from './routes/productRoutes.js'
 import orderRoutes from './routes/orderRoute.js'
 import uploadRoutes from './routes/uploadRoutes.js'
 import categoryRoutes from "./routes/categoryRoutes.js";
+import cors from 'cors';
+app.use(cors({ origin: 'https://tosh-mart.vercel.app' }));
+
 dotenv.config();
 const port = process.env.PORT || 5000;
 connectDB();
