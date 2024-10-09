@@ -14,7 +14,7 @@ const OrderList = () => {
                 <Loader />
             ) : error ? (
                 <Message variant="danger">
-                    {error?.data?.message || error.error}
+                    {error?.data?.messageing1 || error.error}
                 </Message>
             ) : (
                 <table className="container mx-auto">

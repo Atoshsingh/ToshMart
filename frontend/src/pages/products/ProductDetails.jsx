@@ -85,7 +85,7 @@ const ProductDetails = () => {
             ) : error ? (
                 <Message variant="danger">
                     {/* {error?.data?.message || error.message} // update during message error */}
-                    {error?.data?.message}
+                    {error?.data?.messageing3}
                 </Message>
             ) : (
                 <>
