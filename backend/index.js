@@ -21,6 +21,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 //APIs
+app.get("/", (req, res) => {
+    res.send("working totaly fine");
+})
 app.use('/api/users', userRoutes);
 app.use('/api/catogory', categoryRoutes);
 app.use('/api/products', productRoutes);
