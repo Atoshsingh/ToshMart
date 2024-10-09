@@ -12,13 +12,13 @@ import orderRoutes from './routes/orderRoute.js'
 import uploadRoutes from './routes/uploadRoutes.js'
 import categoryRoutes from "./routes/categoryRoutes.js";
 import cors from 'cors';
+const app = express();
 app.use(cors({ origin: 'https://tosh-mart.vercel.app' }));
 
 dotenv.config();
 const port = process.env.PORT || 5000;
 connectDB();
 
-const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
