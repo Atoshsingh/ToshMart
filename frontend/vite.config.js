@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/api/": "https://toshmart.onrender.com",
-      "/uploads/": "https://toshmart.onrender.com",
+      "/api/": "http://localhost:5000",
+      "/uploads/": "http://localhost:5000",
     }
   }
 })
