@@ -68,7 +68,7 @@ const ProductDetails = () => {
         console.log(product);
     }
 
-    return (
+    return ( 
         <>
             <div>
             <button onClick={func} className="bg-white text-black">click for checking something </button>
@@ -84,7 +84,8 @@ const ProductDetails = () => {
                 <Loader />
             ) : error ? (
                 <Message variant="danger">
-                    {error?.data?.message || error.message}
+                    {/* {error?.data?.message || error.message} // update during message error */}
+                    {error?.data?.message}
                 </Message>
             ) : (
                 <>

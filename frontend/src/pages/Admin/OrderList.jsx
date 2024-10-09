@@ -7,7 +7,7 @@ import AdminMenu from "./AdminMenu";
 
 const OrderList = () => {
     const { data: orders, isLoading, error } = useGetOrdersQuery();
-
+  
     return (
         <>
             {isLoading ? (

@@ -68,7 +68,7 @@ const Order = () => {
             }
         });
     }
-
+ 
     function createOrder(data, actions) {
         return actions.order
             .create({
@@ -81,7 +81,8 @@ const Order = () => {
 
     function onError(err) {
         console.log("order.js")
-        toast.error(err.message);
+        // toast.error(err.message); // update during message error
+        toast.error(err);
     }
 
     const deliverHandler = async () => {

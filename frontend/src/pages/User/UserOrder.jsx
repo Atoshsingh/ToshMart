@@ -6,7 +6,7 @@ import { useGetMyOrdersQuery } from "../../redux/api/orderApiSlice";
 const UserOrder = () => {
   const { data: orders, isLoading, error } = useGetMyOrdersQuery();
 
-  return (
+  return ( 
     <div className="container mx-auto">
       <h2 className="text-2xl font-semibold mb-4">My Orders </h2>
 
